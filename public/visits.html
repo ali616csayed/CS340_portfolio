@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visits Records Management</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+    </head>
+    <body>
+        <!-- Global Navigation -->
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./physicians.html">Physicians</a>
+            <a href="./patients.html">Patients</a>
+            <a href="./hospitals.html">Hospitals</a>
+            <a href="./specialties.html">Specialties</a>
+            <a href="./procedures.html">Procedures</a>
+            <a href="./visits.html">Visits</a>
+            <a href="./visitprocedures.html">Visit Procedures</a>
+        </nav>
+
+        <h1>Visits Records Management</h1>
+
+        <!-- Form to Add a Record -->
+        <h2>Add a Visit Record</h2>
+        <form id="addForm">
+            <label for="hospitalID">Hospital ID:</label>
+            <input type="number" id="hospitalID" name="hospitalID" required><br>
+
+            <label for="patientID">Patient ID:</label>
+            <input type="number" id="patientID" name="patientID" required><br>
+
+            <label for="physicianID">Physician ID:</label>
+            <input type="number" id="physicianID" name="physicianID"
+                required><br>
+
+            <label for="visitDate">Visit Date:</label>
+            <input type="date" id="visitDate" name="visitDate" required><br>
+
+            <button type="submit">Add Visit</button>
+        </form>
+
+        <!-- Form to Delete a Record -->
+        <h2>Delete a Visit Record</h2>
+        <form id="deleteForm">
+            <label for="visitID">Visit ID:</label>
+            <input type="number" id="visitID" name="visitID" required><br>
+            <button type="submit">Delete Visit</button>
+        </form>
+
+        <!-- Display All Records -->
+        <h2>All Visit Records</h2>
+        <div id="visitsTable">
+            <p>Table to display visits will be dynamically populated</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Visit ID</th>
+                        <th>Hospital ID</th>
+                        <th>Patient ID</th>
+                        <th>Physician ID</th>
+                        <th>Visit Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>601</td>
+                        <td>101</td>
+                        <td>501</td>
+                        <td>1</td>
+                        <td>2023-05-10</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>602</td>
+                        <td>102</td>
+                        <td>502</td>
+                        <td>2</td>
+                        <td>2023-06-20</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>603</td>
+                        <td>103</td>
+                        <td>503</td>
+                        <td>3</td>
+                        <td>2023-07-15</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>604</td>
+                        <td>101</td>
+                        <td>504</td>
+                        <td>4</td>
+                        <td>2023-08-30</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

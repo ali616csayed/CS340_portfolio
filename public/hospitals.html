@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hospitals Records Management</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+    </head>
+    <body>
+        <!-- Global Navigation -->
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./physicians.html">Physicians</a>
+            <a href="./patients.html">Patients</a>
+            <a href="./hospitals.html">Hospitals</a>
+            <a href="./specialties.html">Specialties</a>
+            <a href="./procedures.html">Procedures</a>
+            <a href="./visits.html">Visits</a>
+            <a href="./visitprocedures.html">Visit Procedures</a>
+        </nav>
+
+        <h1>Hospitals Records Management</h1>
+
+        <!-- Form to Add a Record -->
+        <h2>Add a Hospital Record</h2>
+        <form id="addForm">
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName"
+                required><br>
+
+            <button type="submit">Add Hospital</button>
+        </form>
+
+        <!-- Form to Delete a Record -->
+        <h2>Delete a Hospital Record</h2>
+        <form id="deleteForm">
+            <label for="hospitalID">Hospital ID:</label>
+            <input type="number" id="hospitalID" name="hospitalID" required><br>
+            <button type="submit">Delete Hospital</button>
+        </form>
+
+        <!-- Display All Records -->
+        <h2>All Hospital Records</h2>
+        <div id="hospitalsTable">
+            <p>Table to display hospitals will be dynamically populated</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hospital ID</th>
+                        <th>Hospital Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Mercy Hospital</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>St. Joseph's</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>General Hospital</td>
+                        <td>
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
